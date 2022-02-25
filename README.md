@@ -1,2 +1,0 @@
-# accomplishments
-このrepositoryは自分が学習の時に作った副産物です。
