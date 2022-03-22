@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 #読み込むfilename
-filename="AQI SOAP JP as of 29b OCT-FY21.xlsx"
+filename="CT-FY21.xlsx"
 
 #エクセル読み込み
 df = pd.read_excel(rf"" ,sheet_name="")
@@ -53,5 +53,5 @@ df["Age Category"]= np.select(conditions,choices,default=0)
 
 #エクセルに書き出し
 today=dt.datetime.now().strftime("%b %d %Y")
-# df.to_excel(rf"C:\Users\AA\Desktop\picc\Aged and Credit Travel Debts as of {today}.xlsx",sheet_name="Pub_Travel_Salary_Debt_Detail",encoding="utf_8_sig", index=False)
+df.to_excel(rf"C:\Users\AA\Desktop\picc\Aged and Credit Travel Debts as of {today}.xlsx",sheet_name="Pub_Travel_Salary_Debt_Detail",encoding="utf_8_sig", index=False)
 
